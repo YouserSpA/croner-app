@@ -1,0 +1,67 @@
+<ion-view>
+
+	<div class="bar bar-header bar-orange">
+		<a class="button ion-chevron-left" href="#/timecheck"> Volver</a>
+		<h1 class="title">Mi organización</h1>
+	</div>
+
+	<ion-content class="has-header">
+
+		<div class="list card timechecks">
+
+			<div class="item item-avatar">
+				<img src="img/photo.png">
+				<h2>{{ selected.name }}</h2>
+				<p>{{ selected.address }}</p>
+			</div>
+
+			<div class="item item-body">
+
+				<div class="row">
+					<div class="col col-100 text-center clock">
+						{{ clock }}
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col col-50">
+						<button class="button button-block button-balanced" ng-disabled="selected.ingreso" ng-click="ingreso()">
+							<b>Ingreso</b>
+						</button>
+						
+					</div>
+					<div class="col col-50">
+						<button class="button button-block button-stable" ng-disabled="!selected.ingreso" ng-click="salida()">
+							<b>Salida</b>
+						</button>
+						
+					</div>
+				</div>
+				
+
+				<div class="row">
+					<div class="col col-100">
+						<a class="button button-block button-positive" href="#/message/{{ selected.id }}">Mensajes</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="card">
+			<ul class="list timecheck-list">
+				<li class="item" ng-repeat="reg in selected.register">
+					<div class="row">
+						<div class="col col-50">{{ reg.time }}</div>
+						<div class="col col-50 text-right">{{ reg.type }}</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- <div id="console"></div> -->
+
+	</ion-content>
+
+</ion-view>

@@ -1,0 +1,40 @@
+
+.back-orange {
+	background-color: $croner-orange;
+}
+
+.bar-orange {
+	background-color: $croner-orange;
+	color: white;
+
+	&.offline {
+		background-color: inherit;
+		color: $croner-orange;
+	}
+
+	.button {
+		background-color: darken($croner-orange, 5%);
+		color: white;
+	}
+}
+
+.index-logo {
+	width: 80%;
+}
+
+.helper {
+    display: inline-block;
+    height: 90%;
+    vertical-align: middle;
+}
+
+.row {
+	margin-left: 0px;
+}
+
+#console {
+	font-family: Consolas, monospace;
+	background-color: black;
+	color: white;
+	padding: 0px 10px 20px 10px;
+}

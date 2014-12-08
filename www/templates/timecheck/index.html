@@ -1,0 +1,25 @@
+<ion-view>
+
+	<div class="bar bar-header bar-orange">
+		<a class="button button-light ion-log-out" href="#/login"> Salir</a>
+		<h1 class="title">Mis organizaciones ({{ empresas.length }})</h1>
+	</div>
+
+	<ion-content class="has-header">
+
+
+	<div class="list timechecks">
+
+		<a class="item item-thumbnail-left" ng-repeat="empresa in empresas" href="#/timecheck/{{empresa.id}}">
+	      <img src="img/photo.png" />
+	      <h2>{{ empresa.name }}</h2>
+	      <p>{{ empresa.address }}</p>
+	    </a>
+
+	</div>
+
+	<!-- <div id="console"></div>	 -->
+
+	</ion-content>
+	
+</ion-view>

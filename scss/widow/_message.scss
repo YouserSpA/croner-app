@@ -1,0 +1,61 @@
+
+.bar-footer {
+
+	.send-input {
+		width: 100%;
+	}
+
+	.send-button {
+		min-width: 60px;
+		min-height: 36px;
+		margin-top: -1px;
+	}
+}
+
+.message-list {
+	padding-top: 50px;
+	height: 100%;
+
+	.message {
+		margin: 10px 15px 10px 65px;
+		border-radius: 10px;
+		position: relative;
+
+		padding: 10px 15px;
+		background-color: $croner-orange;
+		color: white;
+		font-weight: bolder;
+	}
+}
+
+#footer {
+	border-top: 1px solid $croner-orange;
+	background-color: $croner-grey;
+
+	button {
+		position: absolute;
+		right: 0px;
+	}
+}
+
+.tail.right:after {
+	top: 15px;
+	right: -5px;
+	bottom: auto;
+	left: auto;
+	border-width: 10px 0 0 10px;
+	border-color: rgba(0, 0, 0, 0) $croner-orange;
+	transform: rotate(-135deg)
+}
+
+.tail:after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50px;
+	border-width: 20px 0 0 20px;
+	border-style: solid;
+	border-color: #075698 rgba(0, 0, 0, 0);
+	display: block;
+	width: 0;
+}

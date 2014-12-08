@@ -1,0 +1,24 @@
+
+.timechecks {
+	
+	.item {
+		
+		img {
+			opacity: 0.25;
+		}
+	}
+
+	.clock {
+		font-size: 40px;
+		font-weight: bold;
+		color: $croner-orange;
+	}
+}
+
+.timecheck-list {
+
+	.item {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
